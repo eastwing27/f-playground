@@ -6,15 +6,18 @@ module Misc =
     let add num1 num2 = 
         num1 + num2
 
+    let multThenAdd a b c =
+        a * b + c
+
+    let addTen =
+        add 10
+
     let any (items: seq<int>) =
         items.Any()
 
     let isSumEven n1 n2 =
         let sum = add n1 n2
         sum % 2 = 0
-
-    let addTen num =
-        (num+10, "The original value was " + num.ToString())
 
     let addMem n1 n2 = 
         let res = add n1 n2
